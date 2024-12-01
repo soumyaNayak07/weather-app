@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather App</title>
+<style>
+    /* General Styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #6dd5ed, #2193b0); /* Matching gradient */
+        color: #fff;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 20px 0;
+        font-size: 36px;
+        color: #f7f7f7;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    form {
+        margin-top: 30px;
+    }
+
+    /* Input Field Styling */
+    input[type="text"] {
+        padding: 10px;
+        width: 300px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Button Styling */
+    button {
+        padding: 10px 20px;
+        margin-left: 10px;
+        background-color: #2193b0;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+        background-color: #6dd5ed;
+        transform: scale(1.05);
+    }
+
+    /* Container Styling */
+    .container {
+        margin: 50px auto;
+        max-width: 600px;
+        background: rgba(0, 0, 0, 0.6); /* Darkened transparent background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to My Weather App</h1>
+    <form action="MyServlet" method="post">
+        <input type="text" name="input" placeholder="Enter city ">
+        <button name="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
